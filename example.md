@@ -5,31 +5,13 @@ layout: cover
 class: text-left
 backgroud: '/ATLAS/ATLAS-Logo.png'
 authors:  # First author should be the presenter
-  - First Author: ["Institution 1", "Institution 2"]
-  - Second Author: ["Institution 3"]
-  - Third Author: ["Institution 1", "Institution 3"] 
+  - 清水 哲也: [所属1, 所属2]
 
-meeting: "presentation meeting"
-preTitle: "An Example Title"
+preTitle: "授業用スライド"
+meeting: "第x回 ガイダンス"
 ---
 
-<br>
-<p style="color:#0FA3B1;">Don't explicitly put title on cover page 🥳 </p>
-<p style="color:#0FA3B1;">Put your own logo somewhere </p>
-
-<img id="ATLAS" src="/ATLAS/ATLAS-Logo.png"> </img>
-
-<style scoped>
-#ATLAS {
-  width: 180px;
-  position: absolute;
-  right: 3%;
-  bottom: 4%;
-  /* background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 15%, #146b8c 50%); */
-}
-</style>
-
+<!-- -->
 ---
 layout: pageBar
 ---
