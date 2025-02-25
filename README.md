@@ -118,28 +118,28 @@ Text Boxコンポーネントは，スタイル付きコンテナ内にテキス
 
 ### `PlotlyGraph`
 
-The `PlotlyGraph` component is a Vue wrapper for Plotly.js, allowing for easy embedding and manipulation of Plotly graphs within your Vue application. The component accepts various props to customize the graph's dimensions and font sizes.
+`PlotlyGraph`コンポーネントはPlotly.jsのVueラッパーで，VueアプリケーションにPlotlyグラフを簡単に埋め込んで操作することができる．このコンポーネントは，グラフの寸法やフォントサイズをカスタマイズするための様々なpropsを受け付ける．
 
 #### Props
 
 The component accepts the following props for configuration:
 
-| Prop                      | Type   | Description                                                     |
-| ------------------------- | ------ | --------------------------------------------------------------- |
-| `filePath`                | String | The URL or path to the configuration file for the Plotly graph. |
-| `graphWidth`              | Number | The width of the graph in pixels.                               |
-| `graphHeight`             | Number | The height of the graph in pixels.                              |
-| `xTitleFontSize`          | Number | The font size for the x-axis title.                             |
-| `yTitleFontSize`          | Number | The font size for the y-axis title.                             |
-| `tickFontSize`            | Number | The font size for the tick labels on both axes.                 |
-| `annotationFontSizeScale` | Number | A scale factor to adjust the font size of annotations.          |
+|           Prop            |  Type  |                Description                |
+| ------------------------- | ------ | ----------------------------------------- |
+| `filePath`                | String | Plotlyグラフの設定ファイルのURLまたはパス |
+| `graphWidth`              | Number | グラフの幅をピクセル単位で指定            |
+| `graphHeight`             | Number | グラフの高さ（ピクセル単位）              |
+| `xTitleFontSize`          | Number | X軸タイトルのフォントサイズ               |
+| `yTitleFontSize`          | Number | Y軸タイトルのフォントサイズ               |
+| `tickFontSize`            | Number | 両軸の目盛りラベルのフォントサイズ        |
+| `annotationFontSizeScale` | Number | 注釈のフォントサイズを調整するための倍率  |
 
 #### Usage
 
-To use the `PlotlyGraph` component, you must provide the `filePath` prop with a valid URL or path to a Plotly configuration file. 
-Other props are optional and allow you to customize the appearance of the graph.
+`PlotlyGraph`コンポーネントを使用するには，`filePath`プロパティに有効なURLまたはPlotly設定ファイルへのパスを指定する必要がある．その他のプロップはオプションでグラフの外観をカスタマイズすることができる．
 
-**It's highly recommended to produce the JSON file for plotting by [Plotly](https://plotly.com/python/) in Python.**
+
+**Pythonの[Plotly](https://plotly.com/python/)でプロットするためのJSONファイルを作成することを強く進める**
 
 #### Example
 
@@ -165,7 +165,3 @@ Other props are optional and allow you to customize the appearance of the graph.
 - Edit the `example.md` and style to see the changes
 - `npm run export` to generate the preview PDF
 - `npm run screenshot` to generate the preview PNG
-
-
-
-[![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2FAvencastF%2Fslidev-theme-hep&countColor=%23263759)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FAvencastF%2Fslidev-theme-hep)
