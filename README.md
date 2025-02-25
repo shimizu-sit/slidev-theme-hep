@@ -56,48 +56,52 @@ authors:  # 筆頭著者は発表者である前提，かつ，アンダーラ�
 
 このレイアウトは，ページの下に**ボトムバー**とタイトルの左側に**装飾ボックス**を配置したレイアウトである．プレゼンテーション全体に一貫してスライド情報を表示するための構造的なアプローチを与えようとしています．このレイアウトの主要部分は次のとおりです．
 
-This is the layout with a bottom bar and a decorative box left to the title,
-trying to give a structured approach to displaying slide information consistently across the presentation..
-The key parts of this layout are: 
-- **Title Bar at Bottom:** At the bottom of the slide, there's a horizontal bar (a component named `BarBottom`) that contains the following information:
-  - A title (`title`), which displays the title of the presentation pulled from the configuration. 
-  - An author name (`author`), which suggests that it is showing the first author's name from a list of authors defined in the configuration.
-  - A meeting or event name (`meeting`), which is also taken from the configuration settings.
-- **Page Number:**
-   - In the bottom-right corner, there is an automatic slide number indicator. 
+- **Title Bar at Bottom**：スライドの下部には，以下の情報を含む水平のバー(`BarBottom`というコンポーネント)がある
+  - タイトル(`title`)：コンフィギュレーションから取得したプレゼンテーションのタイトルを表示する
+  - 著者名(`author`)：コンフィギュレーションで定義された著者のリストから最初の著者（筆頭著者）の名前を表示する
+  - ミーティングまたはイベント名(`meeting`)：これもコンフィギュレーション設定から取得する
+- **Page Number**：右下には自動スライド番号インジケータを表示する
+
+
 
 ---
 
 ## 🗿 Components
 
-This theme provides the following components:
+このテーマには以下のコンポーネントがある．
 
 ### `TextBox`
 
-The Text Box component is a flexible Vue component designed to display text content within a styled container. 
-The component is absolutely positioned within its parent and can be customized with various styles and labels such as 'info' and 'warning'. 
-The text content supports automatic conversion of newline characters to HTML line breaks for better readability.
+Text Boxコンポーネントは，スタイル付きコンテナ内にテキストコンテンツを表示するように設計された柔軟なVueコンポーネントである．
+このコンポーネントは親コンポーネント内に絶対的に配置され，さまざまなスタイルや「info」や「warning」などのラベルでカスタマイズできる．
+テキストコンテンツは，読みやすくするために改行文字をHTMLの改行に自動変換する機能をサポートしている．
 
 #### Props
-The component accepts the following props:
-| Prop           | Type   | Default                                                    | Description                                              |
-| -------------- | ------ | ---------------------------------------------------------- | -------------------------------------------------------- |
-| `text`         | String | None                                                       | The text content to be displayed within the text box.    |
-| `position`     | Object | `{ top: '0px', left: '0px', right: '0px', bottom: '0px' }` | The absolute position of the text box within its parent. |
-| `customStyles` | Object | None                                                       | Additional custom CSS styles for the text box container. |
-| `label`        | String | `'info'`                                                   | A label that determines the styling of the text content. |
+
+このコンポーネントは以下のプロップを受け付ける
+
+|      Prop      |  Type  |                          Default                           |                     Description                     |
+| -------------- | ------ | ---------------------------------------------------------- | --------------------------------------------------- |
+| `text`         | String | None                                                       | テキストボックス内に表示するテキスト内容            |
+| `position`     | Object | `{ top: '0px', left: '0px', right: '0px', bottom: '0px' }` | 親テキストボックス内のテキストボックスの絶対位置    |
+| `customStyles` | Object | None                                                       | テキストボックスコンテナ用の追加カスタムCSSスタイル |
+| `label`        | String | `'info'`                                                   | テキストコンテンツのスタイルを決定するラベル        |
+
 #### Styling
-The component has scoped CSS with the following predefined classes:
-| Class Name           | Description                                               | Style Properties                                                                       |
-| -------------------- | --------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| `text-box-container` | The container of the text box, centered and flex-aligned. | `display: flex; flex-direction: column; justify-content: center; align-items: center;` |
-| `text-content`       | The actual content of the text box.                       | `padding: 0.5rem;`                                                                     |
-| `warning`            | Style for warning label.                                  | `background-color: #ffcc00; color: red;`                                               |
-| `info`               | Style for info label.                                     | `background-color: transparent; color: #0FA3B1; font-weight: 550; font-size: 1.5em;`   |
 
-The `customStyles` prop allows for further customization beyond these preset classes. Users can pass an object with any CSS properties they wish to apply to the `.text-box-container`.
+このコンポーネントには，以下のの定義済みクラスを持つCSSがスコープされている
 
-Example usage:
+
+|      Class Name      |                      Description                       |                                    Style Properties                                    |
+| -------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| `text-box-container` | テキストボックのコンテナで中央揃え，フレックスアライン | `display: flex; flex-direction: column; justify-content: center; align-items: center;` |
+| `text-content`       | テキストボックスの内容                                 | `padding: 0.5rem;`                                                                     |
+| `warning`            | 警告ラベルのスタイル                                   | `background-color: #ffcc00; color: red;`                                               |
+| `info`               | 情報ラベルのスタイル                                   | `background-color: transparent; color: #0FA3B1; font-weight: 550; font-size: 1.5em;`   |
+
+`customStyles`プロップは，これらのプリセットクラスを超えてさらにカスタマイズすることがｄけいる．ユーザは，`.text-box-container`に適用したい任意のCSSプロパティを持つオブジェクトを渡すことができる．
+
+使用例:
 
 ```html
 <Text-Box

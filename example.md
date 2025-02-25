@@ -43,12 +43,12 @@ Hover on the bottom-left corner to see the navigation's controls panel
 
 ## Keyboard Shortcuts
 
-|     |     |
-| --- | --- |
-| <kbd>space</kbd> / <kbd>tab</kbd> / <kbd>right</kbd> | next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+|                                                      |                             |
+| ---------------------------------------------------- | --------------------------- |
+| <kbd>space</kbd> / <kbd>tab</kbd> / <kbd>right</kbd> | next animation or slide     |
+| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd>  | previous animation or slide |
+| <kbd>up</kbd>                                        | previous slide              |
+| <kbd>down</kbd>                                      | next slide                  |
 
 ---
 layout: pageBar
@@ -120,11 +120,12 @@ Try to interact with the graphs 🥰
 <div grid="~ cols-2 gap-20">
 
 <Transform :scale="0.75">
-<PlotlyGraph filePath="Graph/plotly1.json" tickFontSize="18" graphWidth="800"/>
+<PlotlyGraph filePath="./Graph/plotly1.json" tickFontSize="18" graphWidth="800"/>
 </Transform>
 
+
 <Transform :scale="0.75">
-<PlotlyGraph filePath="Graph/plotly1.json" tickFontSize="18" graphWidth="800"/>
+<PlotlyGraph filePath="./Graph/plotly1.json" tickFontSize="18" graphWidth="800"/>
 </Transform>
 
 </div>
