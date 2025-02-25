@@ -2,9 +2,11 @@
 
 [![NPM version](https://img.shields.io/npm/v/slidev-theme-hep?color=3AB9D4&label=)](https://github.com/AvencastF/slidev-theme-hep/pkgs/npm/slidev-theme-hep)
 
-An academic theme for High Energy Physics (HEP) for [Slidev](https://github.com/slidevjs/slidev). 
+ [Slidev](https://github.com/slidevjs/slidev)用のHigh Energy Physics(HEP)の学術テーマである. 
 
 ## ❤️‍🔥 Demo
+
+HEPテーマのデモページ
 
 ### [link](https://avencastf.github.io/slidev-theme-hep/)
 
@@ -12,24 +14,23 @@ An academic theme for High Energy Physics (HEP) for [Slidev](https://github.com/
 
 ## 🛠 Install
 
-Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
+`slides.md`に以下のfromtmatterを追加する．Slidevを起動すると，テーマを自動的にインストールするよう促される．
 
-<pre><code>---
-theme: <b>hep</b>
----</code></pre>
+```
+theme: hep
+```
 
-Learn more about [how to use a theme](https://sli.dev/themes/use).
+テーマの使い方についてもっと知りたい場合： [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).
 
 ## 💼 Layouts
 
-This theme provides the following layouts:
-
+このテーマに以下のレイアウトがある．
 
 ### Cover
 
 ![sc-cover](screenshot/001.png)
 
-| **Parameter** | **Type**                          | **Default**                       | **Notes**                                              |
+| **Parameter** |             **Type**              |            **Default**            |                       **Notes**                        |
 | ------------- | --------------------------------- | --------------------------------- | ------------------------------------------------------ |
 | `background`  | `string`                          | `'ATLAS/ATLAS-Detector.png'`      |                                                        |
 | `authors`     | `[authorName: string]: string[];` | `{}`                              | See examples below                                     |
