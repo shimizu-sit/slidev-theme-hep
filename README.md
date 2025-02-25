@@ -30,29 +30,31 @@ theme: hep
 
 ![sc-cover](screenshot/001.png)
 
-| **Parameter** |             **Type**              |            **Default**            |                       **Notes**                        |
-| ------------- | --------------------------------- | --------------------------------- | ------------------------------------------------------ |
-| `background`  | `string`                          | `'ATLAS/ATLAS-Detector.png'`      |                                                        |
-| `authors`     | `[authorName: string]: string[];` | `{}`                              | See examples below                                     |
-| `meeting`     | `string`                          | `''` (empty string)               | Meeting of this presentation                           |
-| `preTitle`    | `string`                          | `'An Example Title'`              | Title of the presentation                              |
-| `preDate`     | `string`                          | `new Date().toLocaleDateString()` | Automatically generated as the current localized date. |
+| **Parameter** |    **Type**     |            **Default**            |       **Notes**        |
+| ------------- | --------------- | --------------------------------- | ---------------------- |
+| `background`  | `string`        | `'ATLAS/ATLAS-Detector.png'`      |                        |
+| `authors`     | `名前: [所属];` | `{}`                              | 以下の例を参照         |
+| `meeting`     | `string`        | `''` (空白)                       | プレゼンテーマ         |
+| `preTitle`    | `string`        | `'An Example Title'`              | プレゼンタイトル       |
+| `preDate`     | `string`        | `new Date().toLocaleDateString()` | 自動で現在の日付になる |
 
+`authors` : 著者と対応する所属は以下のように設定できる
 
-The authors and the corresponding affiliation can be configured as below:
 ```yaml
-authors:  # First author should be the presenter
+authors:  # 筆頭著者は発表者である前提，かつ，アンダーラインがつく
   - First Author: ["Institution 1", "Institution 2"] 
   - Second Author: ["Institution 3"]
   - Third Author: ["Institution 1", "Institution 3"] 
 ```
-<span style="color: red;">**Note that the first author should be the presenter.** </span>
+<span style="color: red;">**筆頭著者が発表者であることが前提であることに留意すること** </span>
 
 ---
 
 ### pageBar
 
 ![sc-cover](screenshot/002.png)
+
+このレイアウトは，ページの下に**ボトムバー**とタイトルの左側に**装飾ボックス**を配置したレイアウトである．プレゼンテーション全体に一貫してスライド情報を表示するための構造的なアプローチを与えようとしています．このレイアウトの主要部分は次のとおりです．
 
 This is the layout with a bottom bar and a decorative box left to the title,
 trying to give a structured approach to displaying slide information consistently across the presentation..
