@@ -16,7 +16,7 @@ meeting: "第x回 ガイダンス"
 layout: pageBar
 ---
 
-# What is Slidev?
+# 日本語タイトル
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features
 
