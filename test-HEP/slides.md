@@ -99,8 +99,7 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 ---
-layout: two-cols
-layoutClass: gap-16
+layout: pageBar
 ---
 
 # Table of contents
@@ -113,7 +112,6 @@ You can use the `Toc` component to generate a table of contents for your slides:
 
 The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
 
-::right::
 
 <Toc text-sm minDepth="1" maxDepth="2" />
 
