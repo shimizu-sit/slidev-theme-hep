@@ -1,30 +1,16 @@
 ---
-# You can also start simply with 'default'
-theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
-title: Welcome to Slidev
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+theme: hep
+layout: cover
+class: text-left
+background: "/images/ATLAS/ATLAS-Detector.png"
 
-  Learn more at [Sli.dev](https://sli.dev)
-# apply unocss classes to the current slide
-class: text-center
-# https://sli.dev/features/drawing
-drawings:
-  persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
-mdc: true
+authors:
+  - Tetsuya Shimizu: ["湘南工科大学", "自宅警備員"]
+
+preTitle: "Lecture Name"
+meeting: "x-th Guidance"
+
 ---
-
-# Welcome to Slidev
-
-Presentation slides for developers
 
 <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
   Press Space for next page <carbon:arrow-right />
@@ -44,24 +30,24 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-transition: fade-out
+layout: pageBar
 ---
 
-# What is Slidev?
+# Slidevって何?
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+Slidevは開発者のために設計されたスライドメーカーとプレゼンターで，以下の機能で構成されている
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
+- 📝 **Text-based** - Markdownでコンテンツに集中し，後でスタイルを整える
+- 🎨 **Themable** - テーマはnpmパッケージとして共有・再利用できる
+- 🧑‍💻 **Developer Friendly** - コードハイライト，オートコンプリートによるライブコーディング
+- 🤹 **Interactive** - Vueコンポーネントを埋め込んで表現を強化する
+- 🎥 **Recording** - 内蔵録画とカメラビュー
+- 📤 **Portable** - PDF, PPTX, PNG またはホスト可能なSPAにエクスポートする
+- 🛠 **Hackable** - Webページで可能なことはほとんどすべてSlidevで可能である
 <br>
 <br>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+Slidevについてもっと知りたい場合は 👉  [Why Slidev?](https://sli.dev/guide/why)
 
 <!--
 You can have `style` tag in markdown to override the style for the current page.
@@ -85,11 +71,12 @@ Here is another comment.
 -->
 
 ---
-transition: slide-up
-level: 2
+layout: pageBar
 ---
 
 # Navigation
+
+
 
 Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
 
